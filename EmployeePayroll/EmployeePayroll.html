@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Employee Payroll Form</title>
     <link href="EmployeePayroll.css" rel="stylesheet">
+    <script defer src="Employee.js"></script>
+    <script defer src="Employeepayroll.js"></script>
 </head>
 
 <body>
@@ -25,6 +27,7 @@
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text"  id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text" for="profile" >Profile Image</label>
@@ -52,7 +55,7 @@
                     <label class="text" for="female">Female</label>
                 </div>
             </div>
-            <div class="row-content"">
+            <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
                     <input class="checkbox"  type="checkbox" id="hr" name="hr" value="HR">
@@ -137,6 +140,7 @@
                         <option value="2018">2018</option>
                         <option value="2017">2017</option>
                         <option value="2016">2016</option>
+                        <option value= "2015">2015</option>
                     </select>
                 </div>
             </div>
