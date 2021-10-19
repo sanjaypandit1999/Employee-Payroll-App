@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Employee Payroll Form</title>
-    <link href="EmployeePayroll.css" rel="stylesheet">
-    <script defer src="Employee.js"></script>
-    <script defer src="Employeepayroll.js"></script>
+    <link href="../EmployeePageCSS/EmployeePayroll.css" rel="stylesheet">
+    <script defer src="../EmployeeJS/Employeepayroll.js"></script>
+    <script defer src="../EmployeeJS/Validate.js"></script>
 </head>
 
 <body>
     <header class="header-content header">
         <div class="logo-content">
-            <img src="logo.png" alt="">
+            <img src="../assets/images/logo.png" alt="">
         <div>
             <span class="emp-text"> EMPLOYEE </span><br>
             <span class="emp-text emp-payroll"> PAYROLL</span>
@@ -22,7 +22,7 @@
         </div>
     </header>
         <div class="form-content">
-            <form class="form" action="#" onsubmit="save(); return false">
+            <form class="form" action="#" onsubmit="save()">
             <div class="form-head"> EMPLOYEE PAYROLL FORM </div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
@@ -33,16 +33,16 @@
                 <label class="label text" for="profile" >Profile Image</label>
                 <div class="profile-radio-content">
                     <label>
-                        <input type="radio" id="profile1" name="profile" value="Profile one.png" required>
-                        <img class="profile" id="image1" src="Profile one.png">
+                        <input type="radio" id="profile1" name="profile" src="Profile one.png" required>
+                        <img class="profile" id="image1" src="../assets/profile-images/Profile one.png">
                     </label>
                     <label>
                         <input type="radio" id="profile2" name="profile" value="Ellipse -9.png" required>
-                        <img id="image2" class="profile" src="Ellipse -9.png">
+                        <img id="image2" class="profile" src="../assets/profile-images/Ellipse -9.png">
                     </label>
                     <label>
                         <input type="radio" id="profile3" name="profile" value="Ellipse -8.png" required>
-                        <img id="image3" class="profile" src="Ellipse -8.png">
+                        <img id="image3" class="profile" src="../assets/profile-images/Ellipse -8.png">
                     </label>
                 </div>
             </div>
@@ -58,19 +58,19 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox"  type="checkbox" id="hr" name="hr" value="HR">
+                    <input class="checkbox"  type="checkbox" id="hr" name="department" value="HR">
                     <label class="text" for="hr">HR</label>
 
-                    <input class="checkbox"  type="checkbox" id="sales" name="sales" value="Sales">
+                    <input class="checkbox"  type="checkbox" id="sales" name="department" value="Sales">
                     <label class="text" for="sales">Sales</label>
 
-                    <input class="checkbox"  type="checkbox" id="finance" name="finance" value="Finance">
+                    <input class="checkbox"  type="checkbox" id="finance" name="department" value="Finance">
                     <label class="text" for="finance">Finance</label>
 
-                    <input class="checkbox"  type="checkbox" id="engineer" name="engineer" value="Engineer">
+                    <input class="checkbox"  type="checkbox" id="engineer" name="department" value="Engineer">
                     <label class="text" for="engineer">Engineer</label>
 
-                    <input class="checkbox"  type="checkbox" id="others" name="others" value="Others">
+                    <input class="checkbox"  type="checkbox" id="others" name="department" value="Others">
                     <label class="text" for="others">Others</label>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                 <textarea id="notes" name="Notes" class="input" placeholder=""> </textarea>
             </div>
             <div class="button-parent">
-                <a href="./EmployeePayroll.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="../EmployeePage/EmployeePayroll.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button class="button submitButton" type="submit" id="submitButton">Submit</button>
                     <button type="reset" class="button resetButton">Reset</button>
